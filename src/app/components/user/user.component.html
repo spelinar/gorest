@@ -1,0 +1,24 @@
+<p>post works!</p>
+<table class="table">
+
+  <thead>
+
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>gender</th>
+    <th>email</th>
+    <th>status</th>
+  </tr>
+  </thead>
+
+<router-outlet></router-outlet>
+
+<<tr *ngFor="let lll of user">
+        <td>{{ lll.id }}</td>
+        <td>{{ lll.name }}</td>
+        <td>{{ lll.gender }}</td>
+        <td>{{ lll.email }}</td>
+        <td>{{ lll.status }}</td>
+</tr>
+</table>

@@ -1,0 +1,20 @@
+<p>todo works!</p>
+<table class="table">
+
+  <thead>
+
+  <tr>
+    <th>id</th>
+    <th>user_id</th>
+    <th>title</th>
+  </tr>
+  </thead>
+
+<router-outlet></router-outlet>
+
+<<tr *ngFor="let lll of todos">
+        <td>{{ lll.id }}</td>
+        <td>{{ lll.user_id }}</td>
+        <td>{{ lll.title }}</td>
+</tr>
+</table>

@@ -1,0 +1,21 @@
+<p>post works!</p>
+<table class="table">
+
+  <thead>
+
+  <tr>
+    <th>ID</th>
+    <th>user_id</th>
+    <th>title</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let post of posts "
+  [routerLink]= "['/public/v1/posts', post.id ]">
+    <td><span>{{post.id}}</span></td>
+    <td><span>{{post.user_id}}</span></td>
+    <td><span>{{post.title}}</span></td>
+  </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

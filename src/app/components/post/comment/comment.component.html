@@ -1,0 +1,23 @@
+<p>comment works!</p>
+<table class="table">
+
+  <thead>
+
+  <tr>
+    <th>ID</th>
+    <th>user_id</th>
+    <th>title</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let post of comment "
+  [routerLink]= "['/public/v1/posts', post.id ]">
+    <td><span>{{post.id}}</span></td>
+    <td><span>{{post.post_id}}</span></td>
+    <td><span>{{post.name}}</span></td>
+    <td><span>{{post.email}}</span></td>
+    <td><span>{{post.body}}</span></td>
+  </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>
